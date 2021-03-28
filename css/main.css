@@ -1,4 +1,4 @@
-*{
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -18,17 +18,14 @@ body {
 
   	filter: blur(5px);
   	-webkit-filter: blur(5px);
-  	width: 100vw;
+  	width: 100%;
     height: 100vh;
-
-    position: absolute;
-    z-index: 0;
+    position: fixed;
 }
 
 .content {
 	width: 1600px;
-    height: 100%;
-    padding: 50px;
+    padding: 10px 20px;
     background: #eaeaea;
     
     position: absolute;
@@ -41,16 +38,73 @@ body {
     opacity: 0.8;
 }
 
+.menu {
+	text-align: center;
+	background-color: black;
+	margin-bottom: 20px;
+}
 
 .menu > ul {
 	list-style: none;
 	display: inline-flex;
+	padding: 20px 0;
 }
 
-.menu > ul > li {
-	margin: 0 20px;
+.menu > ul > li:not(:last-child) {
+	border-right: 1px solid #546e91;
+	padding: 0 20px;
 }
 
-.menu > ul > li > a {
+.menu > ul > li:last-child {
+	padding: 0 20px;
+}
+
+.a-section {
 	text-decoration: none;
+	color: #99b7de;
+	font-weight: bold;
+	transition: linear .5s;
 }
+
+.a-section:hover {
+	color: white;
+}
+
+
+article {
+	border: 1px solid #3a5b85;
+	margin-bottom: 30px;
+}
+
+article > h1 {
+	font-family: "Russo one";
+	padding: 8px 15px;
+	background-color: #3a5b85;
+	color: white;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+}
+
+.art-img {
+	width: 600px;
+	border: 1px solid #000;
+}
+
+td.text {
+	font-family: Tahoma;
+	padding: 0 10px;
+	vertical-align: top;
+	color: darkblue;
+	font-size: 18px;
+	word-spacing: 3px;
+	font-weight: 600;
+}
+
+td.text > p {
+	margin-bottom: 15px;
+}
+
+.footer {
+	text-align: right;
+}
+
